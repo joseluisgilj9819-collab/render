@@ -1,0 +1,127 @@
+Diapositiva 1: Portada
+Nombre de la plataforma: Render
+URL: https://render.com
+Integrantes del grupo:
+• Jose Luis Gil
+• Rodrigo Méndez
+
+Diapositiva 2: ¿Qué es la plataforma?
+Descripción general:
+Render es una plataforma cloud moderna (PaaS) que permite desplegar, escalar y gestionar aplicaciones web completas de forma sencilla. Conecta tu repositorio y Render se encarga del resto: construcción, despliegue, redes, escalado automático y monitoreo.
+Tipo de servicio:
+• Hosting estático
+• Backend
+• Full-stack
+• (No es estrictamente serverless, pero soporta workflows y cron jobs)
+
+Diapositiva 3: ¿Para qué se utiliza?
+Casos reales de uso:
+• APIs y backends (Node.js, Python, Go, Ruby…)
+• Aplicaciones full-stack (MERN, Django + React, etc.)
+• Sitios web estáticos
+• Trabajadores en segundo plano, cron jobs y bases de datos gestionadas
+Tipo de proyectos ideales:
+• Proyectos que necesitan backend + base de datos
+• Aplicaciones que requieren Docker o múltiples lenguajes
+• Proyectos personales, startups y PYMES que buscan costos predecibles
+
+Diapositiva 4: Características técnicas
+Lenguajes soportados:
+HTML, CSS, JavaScript, Node.js, Python, Ruby, Go, Rust, Elixir + cualquier lenguaje vía Docker.
+Frameworks compatibles:
+React, Next.js, Vue, Angular, Express, FastAPI, Django, Flask, Rails, Laravel, etc.
+Soporte de bases de datos:
+• PostgreSQL nativo (gestionado)
+• Key Value (Redis-compatible)
+• Cualquier otra base de datos vía Docker o servicio privado
+
+Diapositiva 5: Funcionamiento básico
+¿Cómo se publica un proyecto?
+• Principalmente mediante GitHub (o GitLab / Bitbucket)
+• Deploy automático con cada push
+• También permite subida manual o Docker image
+Flujo paso a paso:
+
+Crear cuenta gratuita en render.com
+Dashboard → “New” → Web Service / Static Site / Postgres…
+Conectar repositorio de GitHub
+Configurar: Build Command (ej. npm run build) y Start Command (ej. npm start)
+Render construye y despliega automáticamente
+Obtienes URL inmediata (.onrender.com)
+
+
+Diapositiva 6: Plan gratuito
+Qué incluye:
+• Web Services gratuitos
+• Static Sites gratuitos (con CDN global)
+• 1 base de datos PostgreSQL gratuita
+• 1 instancia Key Value gratuita
+Limitaciones:
+• Tiempo de ejecución: Los servicios gratuitos se “duermen” después de 15 minutos sin tráfico (cold start de hasta 60 segundos)
+• Almacenamiento: Postgres gratuita = 1 GB (expira a los 30 días)
+• Tráfico: Límite mensual de bandwidth y minutos de build (se cobra si se supera)
+• No recomendado para producción
+
+Diapositiva 7: Planes de pago (si existen)
+Precio aproximado (2026):
+• Basic-256mb → desde 6 $/mes por servicio
+• Basic-1gb → 19 $/mes
+• Planes Professional / Organization → desde 19 $/usuario/mes + recursos
+Qué mejoras ofrecen:
+• Servicios siempre activos (sin dormir)
+• Más RAM/CPU y escalado automático
+• Bases de datos con alta disponibilidad y backups automáticos
+• Más bandwidth y minutos de build incluidos
+• Colaboración en equipo y proyectos ilimitados
+
+Diapositiva 8: Ventajas y desventajas
+Ventajas:
+• Soporte excelente para backends y bases de datos
+• Precios predecibles (por servicio, no por usuario)
+• Docker nativo y multi-lenguaje
+• Facilidad de uso + previews por pull request
+• Muy buena escalabilidad
+Desventajas:
+• Free tier con cold starts (se duerme)
+• Menos optimizado para sitios 100 % estáticos que Vercel/Netlify
+• Base de datos gratuita temporal
+
+Diapositiva 9: Comparativa breve
+Comparación con Vercel (la más parecida):
+
+Aspecto,Render,Vercel
+Mejor para,Backends y full-stack,Frontend y Next.js
+Bases de datos,Postgres + Redis nativos,Solo Postgres (Neon)
+Precios,Por servicio (predecible),Por usuario + uso
+Cold starts (gratis),Sí,No (serverless)
+Docker,Sí,No
+
+¿Por qué elegir Render?
+Si tu proyecto tiene backend, API o base de datos, Render es más completo y barato que Vercel.
+
+Diapositiva 10: Ejemplo real (opcional)
+Ejemplo: Aplicación full-stack MERN (React + Node.js + Postgres)
+• Desplegada en Render usando dos servicios:
+– Frontend (Static Site)
+– Backend (Web Service)
+– Base de datos PostgreSQL
+URL de ejemplo oficial:
+https://render.com/examples (puedes usar el ejemplo “express-hello-world” o “flask-hello-world” que están en su GitHub).
+En la diapositiva puedes poner una captura de tu propio deploy o del ejemplo oficial.
+
+Diapositiva 11: Opinión del grupo
+¿La usaríais en un proyecto real?
+Sí, especialmente en proyectos que necesiten backend y base de datos.
+¿Para qué tipo de empresa?
+• Startups y PYMES tecnológicas
+• Proyectos educativos y personales
+• Equipos que quieran costos predecibles y soporte multi-lenguaje
+• Cualquier empresa que no quiera depender solo de JavaScript/Next.js
+
+Diapositiva 12: Conclusión
+Resumen final:
+Render es una plataforma PaaS completa, potente y accesible que destaca por su flexibilidad, soporte nativo de bases de datos y precios claros. Ideal para pasar de un proyecto local a producción en minutos, tanto en plan gratuito (para pruebas) como en planes pagos (para producción).
+¡Es una de las mejores opciones gratuitas/pagas para proyectos web completos en 2026!
+
+Listo. Copia y pega esto directamente en tus diapositivas.
+Si quieres que ajuste algo (más corto, más largo, cambiar la comparativa, añadir métricas concretas, etc.), solo dime. ¡Éxito con la exposición!
